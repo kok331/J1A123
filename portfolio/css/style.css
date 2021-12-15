@@ -367,6 +367,38 @@ li {
 }
 
 /*--------------------------------
+ Hobby
+---------------------------------*/
+.hobby-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -50px;
+}
+
+.hobby-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 48%;
+  margin-bottom: 50px;
+}
+
+.hobby-img {
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.hobby-body {
+  flex: 1;
+}
+
+.hobby-name {
+  margin-bottom: 3px;
+}
+
+/*--------------------------------
  About
 ---------------------------------*/
 .profile {
@@ -617,5 +649,29 @@ li {
   /* 下層ページ */
   .article {
     padding: 50px 0;
+  }
+
+  /* アニメーション */
+  .ssbs { animation: loading 1s linear 0s infinite; }
+  @keyframes loading {
+      0%   { transform: scale(1); }
+      10%   { transform: scale(0.8); }
+      100% { transform: scale(2); }
+  }
+  .apex { animation: aaa 0.5s linear 0s infinite; }
+  @keyframes aaa {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-10px, 0); }
+    50% { transform: translate(0, 0); }
+    75% { transform: translate(10px, 0); }
+    100% { transform: translate(0, 0); }
+  }
+  .jigazo { transition: animation; }
+  .jigazo:hover { animation: kaiten 0.8s ease-in 0s infinite alternate; }
+  @keyframes kaiten {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(10deg);}
+    100% {transform: rotate(360deg);}
+
   }
 }
