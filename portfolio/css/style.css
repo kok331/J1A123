@@ -60,10 +60,12 @@ li {
   font-size: 34px;
   font-weight: bold;
   line-height: 1;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   text-align: center;
   letter-spacing: .05em;
-  color: #333;
+  color: rgb(41, 129, 31);
+  background-color: #89eb75;
+  border-radius: 10vh;
 }
 
 .lead {
@@ -93,7 +95,7 @@ li {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.2;
-  margin-right: 20px;
+  margin-right: 2px;
   letter-spacing: .05em;
 }
 
@@ -350,6 +352,17 @@ li {
   justify-content: space-between;
   width: 48%;
   margin-bottom: 50px;
+  padding: 5px 8px;
+}
+.skill-item:nth-of-type(odd) {
+  background-color: rgba(145, 250, 168, 0.274);
+}
+.skill-item:nth-of-type(even) {
+  background-color: rgba(148, 202, 160, 0.349);
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
 }
 
 .skill-img {
@@ -374,6 +387,7 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: -50px;
+  
 }
 
 .hobby-item {
@@ -392,6 +406,7 @@ li {
 
 .hobby-body {
   flex: 1;
+  
 }
 
 .hobby-name {
@@ -509,6 +524,39 @@ li {
 .home-link {
   text-align: center;
 }
+/* アニメーション */
+.ssbs { animation: loading 1s linear 0s infinite; }
+@keyframes loading {
+    0%   { transform: scale(1); }
+    10%   { transform: scale(0.8); }
+    100% { transform: scale(1.5); }
+}
+.apex { animation: aaa 0.5s linear 0s infinite; }
+@keyframes aaa {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-10px, 0); }
+  50% { transform: translate(0, 0); }
+  75% { transform: translate(10px, 0); }
+  100% { transform: translate(0, 0); }
+}
+.jigazo {
+  border: 3px solid #000;
+  transition: animation;
+}
+.jigazo:hover { animation: kaiten 0.8s ease-in 0s infinite alternate; }
+@keyframes kaiten {
+  0% {transform: rotate(0deg);}
+  20% {transform: rotate(10deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.cook { transition:  animation; }
+.cook:hover { animation: haneru 1s ease-in-out 0s infinite; }
+@keyframes haneru {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(0, 20px); }
+  100% { transform: translate(0, 0); }
+}
 
 /*media Queries 767
 ----------------------------------------------------*/
@@ -621,11 +669,33 @@ li {
   .skill-item {
     width: 100%;
     margin-bottom: 35px;
+    padding: 5px 8px;
+  }
+  .skill-item:nth-of-type(odd) {
+    background-color: rgba(145, 250, 168, 0.274);
+  }
+  .skill-item:nth-of-type(even) {
+    background-color: rgba(148, 202, 160, 0.349);
   }
 
   .skill-item:last-child {
     margin-bottom: 0;
   }
+
+  .hobby-list {
+    display: block;
+    margin-bottom: 0;
+  }
+  
+  .hobby-item {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  
+  .hobby-item:last-child {
+    margin-bottom: 0;
+  }
+  
 
   /* About */
   .profile {
@@ -656,7 +726,7 @@ li {
   @keyframes loading {
       0%   { transform: scale(1); }
       10%   { transform: scale(0.8); }
-      100% { transform: scale(2); }
+      100% { transform: scale(1.5); }
   }
   .apex { animation: aaa 0.5s linear 0s infinite; }
   @keyframes aaa {
@@ -673,5 +743,12 @@ li {
     20% {transform: rotate(10deg);}
     100% {transform: rotate(360deg);}
 
+  }
+  .cook { transition:  animation; }
+  .cook:hover { animation: haneru 1s ease-in-out 0s infinite; }
+  @keyframes haneru {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(0, 20px); }
+    100% { transform: translate(0, 0); }
   }
 }
