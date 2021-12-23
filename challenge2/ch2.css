@@ -33,10 +33,22 @@ a {
   padding: 10px;
 }
 a:hover { background: #e4e3d6; }
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+li {
+  flex: 1 1 20%;
+}
 
 /*----------------------------
 main
 ----------------------------*/
+body {
+  background: url(wood.jpg) #504643 left top repeat  ;
+  text-align: center;
+}
 main {
   color: #504643;
   margin-bottom: 40px;
@@ -48,6 +60,7 @@ em {
   font-weight: bold;
   color: #196f6a;
 }
+
 
 /*----------------------------
 この下に、CSSの指定を記述していきましょう。
