@@ -44,7 +44,10 @@ li {
 }
 
 .section:nth-of-type(odd) {
-  background-color: #f7f7f7;
+  background-color: #f9f4ef;
+}
+.section:nth-of-type(even) {
+  background-color: #fffffe;
 }
 
 .inner {
@@ -57,14 +60,15 @@ li {
  見出し
 ---------------------------------*/
 .title {
-  font-size: 34px;
+  font-size: 25px;
+  padding: 10px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 60px;
   text-align: center;
   letter-spacing: .05em;
-  color: rgb(41, 129, 31);
-  background-color: #89eb75;
+  color: #fffffe;
+  background-color: #716040;
   border-radius: 10vh;
 }
 
@@ -80,7 +84,7 @@ li {
   top: 0;
   z-index: 4;
   width: 100%;
-  background-color: #fff;
+  background-color: #020826;
   box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
 }
 
@@ -100,7 +104,7 @@ li {
 }
 
 .header-logo a {
-  color: #333;
+  color: #fffffe;
 }
 
 .header-nav-list {
@@ -120,7 +124,7 @@ li {
   padding: 5px 0;
   transition: .3s;
   letter-spacing: .05em;
-  color: #333;
+  color: #fffffe;
 }
 .header-nav-item a:after {
   position: absolute;
@@ -132,7 +136,7 @@ li {
   transition: .3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: #fffffe;
 }
 
 .header-nav-item a:hover:after {
@@ -185,9 +189,16 @@ li {
 }
 .main-visual-img img {
   border-radius: 50%;
+  border-color: #716040;
 }
 .main-visual-text {
+  margin: auto;
+  padding: 10px;
   flex: 1;
+  background: #eaddcf;
+  color: #020826;
+  font-size: 15px;
+  border-radius: 4px;
 }
 .main-visual-text p:not(:last-child) {
   margin-bottom: 30px;
@@ -199,13 +210,17 @@ li {
 .works-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -40px;
+  /* margin-bottom: -40px; */
+  margin: 0 auto -40px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .works-item {
   width: 31.74603%;
   margin-right: 1.58730%;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+  margin: 0 auto 40px;
   color: #333;
 }
 
@@ -217,14 +232,14 @@ li {
   display: inline-block;
   max-width: 180px;
   text-align: center;
-  background-color: #293b6a;
+  background-color: #f25042;
   font-size: 16px;
-  color: #FFF;
+  color: #fffffe;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
   border: 1px dashed #FFF;
-  box-shadow: 0px 0px 0px 2px #293b6a;/* box-shadowで外枠を */
+  box-shadow: 0px 0px 0px 2px #f25042;/* box-shadowで外枠を */
 }
 
 .btn-denim:hover {
@@ -236,13 +251,13 @@ li {
   max-width: 180px;
   height:50px;
   text-align: center;
-  background-color: #9ec34b;
+  background-color: #8c7851;
   font-size: 16px;
   line-height: 52px;
-  color: #FFF;
+  color: #fffffe;
   text-decoration: none;
   font-weight: bold;
-  border: 2px solid #9ec34b;
+  border: 2px solid #8c7851;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -254,14 +269,14 @@ li {
   position: absolute;
   top: 50%;
   left: 50%;
-  background : #FFF;
+  background : #fffffe;
   opacity: 0;
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transition: .2s;
   z-index: -1;
 }
 .btn-open:hover{
-  color: #9ec34b;
+  color: #716040;
 }
 .btn-open:hover:after{
   height: 240%;
@@ -277,18 +292,18 @@ li {
   max-width: 180px;
   text-align: center;
   font-size: 16px;
-  color: #9ec34b;
+  color: #8c7851;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
   position: relative;
-  border: 2px solid #9ec34b;
+  border: 2px solid #8c7851;
   transition: .4s;
 }
 
 .btn-box:hover {
   border: 2px solid transparent;
-  color: #000;
+  color: #716040;
 }
 
 .btn-box:before, .btn-box:after {
@@ -305,14 +320,14 @@ li {
 }
 
 .btn-box:before {
-  border-bottom: 2px solid #000;
-  border-left: 2px solid #000;
+  border-bottom: 2px solid #020826;
+  border-left: 2px solid #020826;
   transform-origin: 100% 0%;
 }
 
 .btn-box:after {
-  border-top: 2px solid #000;
-  border-right: 2px solid #000;
+  border-top: 2px solid #020826;
+  border-right: 2px solid #020826;
   transform-origin: 0% 100%;
 }
 
@@ -331,7 +346,7 @@ li {
   font-weight: bold;
   padding: 12px 24px;
   border-radius: 4px;
-  background-image: linear-gradient(-90deg, #89eb75, #f1e753);
+  background-image: linear-gradient(-90deg, #8c7851, #eaddcf);
   transition: .5s;
   background-size: 200%;
 }
@@ -376,7 +391,8 @@ li {
 .skill-name {
   padding-left: 5px;
   margin-bottom: 3px;
-  background-color: rgba(145, 250, 168, 0.274);
+  color: #020826;
+  background-color: #eaddcf;
 }
 
 
@@ -413,7 +429,8 @@ li {
 .hobby-name {
   padding-left: 5px;
   margin-bottom: 3px;
-  background-color: rgba(145, 250, 168, 0.274);
+  color: #020826;
+  background-color: #eaddcf;
   
 }
 
