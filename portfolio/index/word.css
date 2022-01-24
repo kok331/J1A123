@@ -41,6 +41,7 @@ main {
   
   .header-logo a {
     color: #fffffe;
+    text-decoration: none;
   }
   
   .header-nav-list {
@@ -82,17 +83,17 @@ main {
     max-width: 20%;
   }
 
-.back {
+/* .back {
     padding-left: 1vh;
     padding-bottom: 2vh;
     background-color: rgb(154, 226, 106);
-}
-.back img {
+} */
+/* .back img {
     padding-right: 0.5vh;
     height: 5vh;
     position: relative;
     top: 1vh;
-}
+} */
 .types {
     background-color: #eaddcf;
     color: #020826;
