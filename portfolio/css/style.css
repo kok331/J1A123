@@ -578,6 +578,12 @@ li {
   50% { transform: translate(0, 20px); }
   100% { transform: translate(0, 0); }
 }
+.pagetop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
+}
 
 /*media Queries 767
 ----------------------------------------------------*/
@@ -772,4 +778,10 @@ li {
     50% { transform: translate(0, 20px); }
     100% { transform: translate(0, 0); }
   }
+}
+.pagetop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
 }

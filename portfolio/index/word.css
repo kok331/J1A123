@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 main {
-  margin-top: 90px;
+  margin-top: 150px;
 }
   /*  */
   .header {
@@ -94,7 +94,12 @@ main {
     position: relative;
     top: 1vh;
 } */
+h2 {
+  margin-left: 10px;
+}
 .types {
     background-color: #eaddcf;
     color: #020826;
+    text-align: center;
+    border-radius: 100px;
 }
