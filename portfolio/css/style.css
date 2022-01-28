@@ -9,7 +9,12 @@ body {
 a {
   transition: opacity .3s;
   text-decoration: none;
-  color: #1ca9e3;
+  color: #8c7851;
+  text-decoration: none;
+}
+a:hover{
+  font-size: 1.1em;
+  color: #f25042;
 }
 
 img {
