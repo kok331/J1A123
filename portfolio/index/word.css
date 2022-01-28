@@ -5,17 +5,20 @@
 }
 a {
   color: #8c7851;
+  text-decoration: none;
 }
 body {
   background: #f9f4ef;
   margin: 0;
 }
+
 main {
-  margin-top: 150px;
+  /* margin-top: 150px; */
+  padding-top: 15px;
 }
   /*  */
   .header {
-    position: fixed;
+    /* position: fixed; */
     margin-bottom: 10px;
     top: 0;
     z-index: 4;
@@ -102,4 +105,44 @@ h2 {
     color: #020826;
     text-align: center;
     border-radius: 100px;
+}
+li a:hover {
+  color: #f25042;
+}
+
+/*--------------------------------
+ ページトップ
+--------------------------------- */
+.page-top {
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 500px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #4c4c4c;
+}
+
+.page-top .material-icons-outlined {
+  vertical-align: bottom;
+  color: #fff;
+}
+
+/*--------------------------------
+ フッター
+---------------------------------*/
+.footer {
+  padding: 30px;
+  background-color: #333;
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  color: #797979;
+}
+.pagetop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
 }
