@@ -10,38 +10,48 @@
     <link rel="shortcut icon" href="../img/faviconKabuto.ico" />
 </head>
 <body>
-    <header class="header">
-        <div class="inner">
-            <h1 class="header-logo">
-                <a href="../../index.html">HINO KOK</a>
-            </h1>
-            <img class="imggazo" src="../img/gazo.png" alt="">
-        </div>
-    </header>
-    
-    <main id="top">
-        <div class="hobby">
-            <h1 class="types">HOBBY</h1>
-            <h2>スマメイト</h2>
-            <ul>
-                <li>大乱闘スマッシュブラザーズの国内最大規模のレーティングサイト</li>
-                <li>ホームページは<a href="https://smashmate.net/">こちら</a>から</li>
-            </ul>
-            <h2>クラシル</h2>
-            <ul>
-                <li>簡単でおいしく作れるレシピ動画を配信しているサービス</li>
-                <li>ホームページは<a href="https://www.kurashiru.com/">こちら</a>から</li>
-            </ul>
-        </div>
-        <div class="page-top" id="js-page-top">
-            <span class="material-icons-outlined">expand_less</span>
-        </div>
-    </main>
+    <div class="wrapper">
+        <header class="header">
+            <div class="inner">
+                <h1 class="header-logo">
+                    <a href="../../index.html">HINO KOK</a>
+                </h1>
+                <nav class="header-nav">
+					<ul class="header-nav-list">
+						<li class="header-nav-item"><a href="#hobby">HOBBY</a></li>
+					</ul>
+				</nav>
+            </div>
+        </header>
+        
+        <main id="top">
+            <section class="head section">
+                <img class="imggazo" src="../img/gazo.png" alt="">
+                <!-- <p class="back"><img class="back" src="../img/backArrow.png" alt="">元のPORTFOLIOサイトに戻る</p> -->
+            </section>
+            <section class="hobby section" id="hobby">
+                <h1 class="types title">HOBBY</h1>
+                <h2>スマメイト</h2>
+                <ul>
+                    <li>大乱闘スマッシュブラザーズの国内最大規模のレーティングサイト</li>
+                    <li>ホームページは<a href="https://smashmate.net/">こちら</a>から</li>
+                </ul>
+                <h2>クラシル</h2>
+                <ul>
+                    <li>簡単でおいしく作れるレシピ動画を配信しているサービス</li>
+                    <li>ホームページは<a href="https://www.kurashiru.com/">こちら</a>から</li>
+                </ul>
+            </section>
+            <div class="page-top" id="js-page-top">
+                <span class="material-icons-outlined">expand_less</span>
+            </div>
+        </main>
 
     <!-- footer -->
 		<footer class="footer">
 			<div class="copyright">&copy; HCS ITシステム科.</div>
 		</footer>
+    </div>
 		<!-- /footer -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
